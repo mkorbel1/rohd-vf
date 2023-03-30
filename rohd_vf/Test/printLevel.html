@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
-  <meta name="description" content="API docs for the fullName method from the Component class, for the Dart programming language.">
-  <title>fullName method - Component class - rohd_vf library - Dart API</title>
+  <meta name="description" content="API docs for the printLevel property from the Test class, for the Dart programming language.">
+  <title>printLevel property - Test class - rohd_vf library - Dart API</title>
 
 
   
@@ -30,10 +30,10 @@
   <ol class="breadcrumbs gt-separated dark hidden-xs">
     <li><a href="../../index.html">rohd_vf</a></li>
     <li><a href="../../rohd_vf/rohd_vf-library.html">rohd_vf</a></li>
-    <li><a href="../../rohd_vf/Component-class.html">Component</a></li>
-    <li class="self-crumb">fullName method</li>
+    <li><a href="../../rohd_vf/Test-class.html">Test</a></li>
+    <li class="self-crumb">printLevel property</li>
   </ol>
-  <div class="self-name">fullName</div>
+  <div class="self-name">printLevel</div>
   <form class="search navbar-right" role="search">
     <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
   </form>
@@ -50,36 +50,30 @@
 
   <div id="dartdoc-main-content" class="main-content">
       <div>
-<h1><span class="kind-method">fullName</span> method 
+<h1><span class="kind-property">printLevel</span> property 
     <a href="https://dart.dev/null-safety" class="feature feature-null-safety" title="Supports the null safety language feature.">Null safety</a>
 </h1></div>
 
-    <section class="multi-line-signature">
-      
-  <div>
-    <ol class="annotation-list">
-        <li>@<a href="https://api.dart.dev/stable/2.19.6/dart-core/override-constant.html">override</a></li>
-    </ol>
-  </div>
+        <section class="multi-line-signature">
+          
+          <a href="https://pub.dev/documentation/logging/1.1.1/logging/Level-class.html">Level</a>
+          <span class="name ">printLevel</span>
+          <div class="features"><span class="feature">read / write</span></div>
 
-<span class="returntype"><a href="https://api.dart.dev/stable/2.19.6/dart-core/String-class.html">String</a></span>
-<span class="name ">fullName</span>(<wbr>)
-
-      <div class="features"><span class="feature">override</span></div>
-
-    </section>
-    
+        </section>
+        
 <section class="desc markdown">
-  <p>A descriptive name including the full hierarchical path of
-this <a href="../../rohd_vf/Component-class.html">Component</a>.</p>
+  <p>The minimum <a href="https://pub.dev/documentation/logging/1.1.1/logging/Level-class.html">Level</a> which should be printed out to <code>stdout</code>.</p>
+<p>Note that this is independent of the <a href="https://pub.dev/documentation/logging/1.1.1/logging/Logger-class.html">Logger</a>'s level, which
+controls whether the <a href="../../rohd_vf/Test-class.html">Test</a> receives messages at all.  If the
+<a href="https://pub.dev/documentation/logging/1.1.1/logging/Logger-class.html">Logger</a>'s level is above <a href="../../rohd_vf/Test/killLevel.html">killLevel</a> and/or <a href="../../rohd_vf/Test/failLevel.html">failLevel</a>, then
+the <a href="../../rohd_vf/Test-class.html">Test</a> will not fail when those messages are emitted.</p>
 </section>
 
-
-    
+        
 <section class="summary source-code" id="source">
   <h2><span>Implementation</span></h2>
-  <pre class="language-dart"><code class="language-dart">@override
-String fullName() =&gt; hierarchy().map((e) =&gt; e.name).join(&#39;.&#39;);</code></pre>
+  <pre class="language-dart"><code class="language-dart">Level printLevel;</code></pre>
 </section>
 
 
@@ -95,41 +89,50 @@ String fullName() =&gt; hierarchy().map((e) =&gt; e.name).join(&#39;.&#39;);</co
 <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
   <li><a href="../../index.html">rohd_vf</a></li>
   <li><a href="../../rohd_vf/rohd_vf-library.html">rohd_vf</a></li>
-  <li><a href="../../rohd_vf/Component-class.html">Component</a></li>
-  <li class="self-crumb">fullName method</li>
+  <li><a href="../../rohd_vf/Test-class.html">Test</a></li>
+  <li class="self-crumb">printLevel property</li>
 </ol>
 
 
-    <h5>Component class</h5>
+    <h5>Test class</h5>
     <ol>
 
-        <li class="section-title"><a href="../../rohd_vf/Component-class.html#constructors">Constructors</a></li>
-          <li><a href="../../rohd_vf/Component/Component.html">Component</a></li>
+        <li class="section-title"><a href="../../rohd_vf/Test-class.html#constructors">Constructors</a></li>
+          <li><a href="../../rohd_vf/Test/Test.html">Test</a></li>
 
 
         <li class="section-title">
-          <a href="../../rohd_vf/Component-class.html#instance-properties">Properties</a>
+          <a href="../../rohd_vf/Test-class.html#instance-properties">Properties</a>
         </li>
-          <li><a href="../../rohd_vf/Component/components.html">components</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/components.html">components</a></li>
+          <li><a href="../../rohd_vf/Test/failLevel.html">failLevel</a></li>
+          <li><a href="../../rohd_vf/Test/failureDetected.html">failureDetected</a></li>
           <li class="inherited"><a href="https://api.dart.dev/stable/2.19.6/dart-core/Object/hashCode.html">hashCode</a></li>
+          <li><a href="../../rohd_vf/Test/killLevel.html">killLevel</a></li>
           <li class="inherited"><a href="../../rohd_vf/ROHDVFObject/logger.html">logger</a></li>
-          <li><a href="../../rohd_vf/Component/name.html">name</a></li>
-          <li><a href="../../rohd_vf/Component/parent.html">parent</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/name.html">name</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/parent.html">parent</a></li>
+          <li><a href="../../rohd_vf/Test/printLevel.html">printLevel</a></li>
           <li class="inherited"><a href="https://api.dart.dev/stable/2.19.6/dart-core/Object/runtimeType.html">runtimeType</a></li>
 
-        <li class="section-title"><a href="../../rohd_vf/Component-class.html#instance-methods">Methods</a></li>
-          <li><a href="../../rohd_vf/Component/build.html">build</a></li>
-          <li><a href="../../rohd_vf/Component/check.html">check</a></li>
-          <li><a href="../../rohd_vf/Component/fullName.html">fullName</a></li>
-          <li><a href="../../rohd_vf/Component/hierarchy.html">hierarchy</a></li>
+        <li class="section-title"><a href="../../rohd_vf/Test-class.html#instance-methods">Methods</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/build.html">build</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/check.html">check</a></li>
+          <li><a href="../../rohd_vf/Test/configureLogger.html">configureLogger</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/fullName.html">fullName</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/hierarchy.html">hierarchy</a></li>
           <li class="inherited"><a href="https://api.dart.dev/stable/2.19.6/dart-core/Object/noSuchMethod.html">noSuchMethod</a></li>
-          <li><a href="../../rohd_vf/Component/run.html">run</a></li>
+          <li class="inherited"><a href="../../rohd_vf/Component/run.html">run</a></li>
+          <li><a href="../../rohd_vf/Test/start.html">start</a></li>
           <li class="inherited"><a href="https://api.dart.dev/stable/2.19.6/dart-core/Object/toString.html">toString</a></li>
 
-        <li class="section-title inherited"><a href="../../rohd_vf/Component-class.html#operators">Operators</a></li>
+        <li class="section-title inherited"><a href="../../rohd_vf/Test-class.html#operators">Operators</a></li>
           <li class="inherited"><a href="https://api.dart.dev/stable/2.19.6/dart-core/Object/operator_equals.html">operator ==</a></li>
 
 
+        <li class="section-title"><a href="../../rohd_vf/Test-class.html#static-properties">Static properties</a></li>
+          <li><a href="../../rohd_vf/Test/instance.html">instance</a></li>
+          <li><a href="../../rohd_vf/Test/random.html">random</a></li>
 
 
 </ol>
