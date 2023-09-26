@@ -71,7 +71,7 @@
     </section>
     
 <section class="desc markdown">
-  <p>Starts the test on the <a href="https://pub.dev/documentation/rohd/0.4.2/rohd/Simulator-class.html">Simulator</a>.</p>
+  <p>Starts the test on the <a href="https://pub.dev/documentation/rohd/0.5.0/rohd/Simulator-class.html">Simulator</a>.</p>
 <p>It will kick off the run phase and continue to run until
 all objections have dropped.</p>
 </section>
@@ -112,6 +112,8 @@ all objections have dropped.</p>
   logger.finest(&#39;Simulation ended, test complete.&#39;);
 
   await _loggerSubscription.cancel();
+
+  _instance = null;
 }</code></pre>
 </section>
 
